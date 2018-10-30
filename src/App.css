@@ -30,3 +30,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* my code: */
+.userCard {
+  width: 30%;
+  margin: 1em;
+}
+
+.userImage {
+  width: 25%;
+}
