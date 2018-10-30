@@ -21,7 +21,6 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div>
-          <p>content</p>
           <Card user={Data.user} />
         </div>
       </div>
