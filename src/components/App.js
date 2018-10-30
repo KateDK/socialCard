@@ -22,6 +22,8 @@ class App extends Component {
         </header>
         <div>
           <Card user={Data.user} />
+          <Card user={Data.user} />
+          <Card user={Data.user} />
         </div>
       </div>
     );
