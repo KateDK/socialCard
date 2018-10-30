@@ -44,7 +44,7 @@ class App extends Component {
           <Card user={Data.user} />
 
           {list.map(item => (
-            <List list={item} />
+            <List key={item.objectID} list={item} />
           ))}
         </div>
       </div>
