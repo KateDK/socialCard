@@ -4,8 +4,8 @@ import '../App.css';
 import Card from './Card';
 import List from './List';
 
-const Data = {
-  user: {
+const Data = [
+  {
     name: 'Kate',
     image: 'https://miro.medium.com/fit/c/240/240/0*yIBEf5iZoTdv3CMH.',
     quote: [
@@ -13,7 +13,16 @@ const Data = {
       '-Herbert Bayard Swope',
     ],
   },
-};
+  {
+    name: 'Cate',
+    image:
+      'https://images.unsplash.com/photo-1505481354248-2ba5d3b9338e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bdf10e1615dc7c122da9b74cd9cfcc0f&auto=format&fit=crop&w=668&q=80',
+    quote: [
+      `Through the years I have been known by many names. Diablo Gato, The Furry Lover, Chupa Cabra, Frisky Two Times and then The Gingerhead man. But to most I am Puss in Boots, outlaw!`,
+      '-Puss in Boots',
+    ],
+  },
+];
 const list = [
   {
     title: 'React',
@@ -40,8 +49,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div>
-          <Card user={Data.user} />
-          <Card user={Data.user} />
+          <Card user={Data[0]} />
+          <Card user={Data[1]} />
 
           {list.map(item => (
             <List key={item.objectID} list={item} />
