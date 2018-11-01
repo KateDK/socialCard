@@ -2,10 +2,6 @@ import React from 'react';
 import Card from './Card';
 
 function List(props) {
-  const { users } = props.userList;
-  //console.log(users);
-  //console.log(props.userList);
-
   return (
     <div>
       {props.userList.map(item => (
@@ -13,7 +9,6 @@ function List(props) {
       ))}
     </div>
   );
-  //return <Card user={props} />;
 }
 
 export default List;
