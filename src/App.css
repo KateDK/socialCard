@@ -32,6 +32,11 @@
 }
 
 /* my code: */
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .userCard {
   width: 30%;
   margin: 1em;
