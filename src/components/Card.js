@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Card(props) {
-  console.log(props);
   const { name, image, quote } = props.user.list;
   return (
     <div className="userCard">
@@ -10,11 +9,7 @@ function Card(props) {
       <div className="userQuote">
         <p>{quote}</p>
       </div>
-      <img
-        alt="Smiling girl catching a snowflake"
-        src={image}
-        className="userImage"
-      />
+      <img alt={`${name} avatar`} src={image} className="userImage" />
     </div>
   );
 }
