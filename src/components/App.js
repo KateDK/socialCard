@@ -7,18 +7,17 @@ import faker from 'faker';
 //Create fake data:
 const users = [];
 let numUsers = 0;
-(function createUsers() {
-  while (numUsers < 50) {
-    const user = {
-      name: faker.name.findName(),
-      image: faker.image.avatar(),
-      quote: faker.lorem.sentence(),
-    };
-    user.id = `${numUsers}${user.name}`;
-    users.push(user);
-    numUsers++;
-  }
-})();
+
+while (numUsers < 50) {
+  const user = {
+    name: faker.name.findName(),
+    image: faker.image.avatar(),
+    quote: faker.lorem.sentence(),
+  };
+  user.id = `${numUsers}${user.name}`;
+  users.push(user);
+  numUsers++;
+}
 
 class App extends Component {
   render() {
