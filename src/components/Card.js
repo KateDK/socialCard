@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Card(props) {
-  const { name, image, quote } = props.user.list;
+  const { name, image, quote } = props.user;
+  console.log(props);
   return (
     <div className="userCard">
       <h1>user card</h1>

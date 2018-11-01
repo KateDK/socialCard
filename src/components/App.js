@@ -7,15 +7,18 @@ import faker from 'faker';
 //Create fake data:
 const users = [];
 let numUsers = 0;
-while (numUsers < 50) {
-  const user = {
-    name: faker.name.findName(),
-    image: faker.image.avatar(),
-    quote: faker.lorem.sentence(),
-  };
-  users.push(user);
-  numUsers++;
-}
+(function createUsers() {
+  while (numUsers < 50) {
+    const user = {
+      name: faker.name.findName(),
+      image: faker.image.avatar(),
+      quote: faker.lorem.sentence(),
+    };
+    user.id = `${numUsers}${user.name}`;
+    users.push(user);
+    numUsers++;
+  }
+})();
 
 class App extends Component {
   render() {
@@ -25,9 +28,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div>
-          {users.map(item => (
-            <List key={`${numUsers}${item.name}`} list={item} />
-          ))}
+          <List userList={users} />
         </div>
       </div>
     );
