@@ -3,6 +3,19 @@ import logo from '../logo.svg';
 import '../App.css';
 import Card from './Card';
 import List from './List';
+import faker from 'faker';
+
+const users = [];
+let numUsers = 0;
+while (numUsers < 50) {
+  const user = {
+    name: faker.name.findName(),
+    image: faker.image.avatar(),
+    quote: faker.lorem.sentence(),
+  };
+  users.push(user);
+  numUsers++;
+}
 
 const Data = [
   {
@@ -23,26 +36,28 @@ const Data = [
     ],
   },
 ];
-const list = [
-  {
-    title: 'React',
-    url: 'https://reactjs.org/',
-    author: 'Jordan Walke',
-    num_comments: 3,
-    points: 4,
-    objectID: 0,
-  },
-  {
-    title: 'Redux',
-    url: 'https://redux.js.org/',
-    author: 'Dan Abramov, Andrew Clark',
-    num_comments: 2,
-    points: 5,
-    objectID: 1,
-  },
-];
+// const list = [
+//   {
+//     title: 'React',
+//     url: 'https://reactjs.org/',
+//     author: 'Jordan Walke',
+//     num_comments: 3,
+//     points: 4,
+//     objectID: 0,
+//   },
+//   {
+//     title: 'Redux',
+//     url: 'https://redux.js.org/',
+//     author: 'Dan Abramov, Andrew Clark',
+//     num_comments: 2,
+//     points: 5,
+//     objectID: 1,
+//   },
+// ];
+
 class App extends Component {
   render() {
+    console.log(users);
     return (
       <div className="App">
         <header className="App-header">
@@ -52,8 +67,11 @@ class App extends Component {
           <Card user={Data[0]} />
           <Card user={Data[1]} />
 
-          {list.map(item => (
+          {/* {list.map(item => (
             <List key={item.objectID} list={item} />
+          ))} */}
+          {users.map(item => (
+            <List key={`${numUsers}${item.name}`} list={item} />
           ))}
         </div>
       </div>
