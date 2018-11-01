@@ -35,14 +35,27 @@
 .userList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .userCard {
   width: 30%;
-  margin: 1em;
+  margin: 1%;
   background-color: #add2d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .userImage {
   width: 25%;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+.userQuote {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 5em;
 }
