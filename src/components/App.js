@@ -57,15 +57,15 @@ const Data = [
 
 class App extends Component {
   render() {
-    console.log(users);
+    // console.log(users);
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div>
-          <Card user={Data[0]} />
-          <Card user={Data[1]} />
+          {/* <Card user={Data[0]} />
+          <Card user={Data[1]} /> */}
 
           {/* {list.map(item => (
             <List key={item.objectID} list={item} />

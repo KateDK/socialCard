@@ -2,14 +2,13 @@ import React from 'react';
 
 function Card(props) {
   console.log(props);
-  const { name, image, quote } = props.user;
+  const { name, image, quote } = props.user.list;
   return (
     <div className="userCard">
       <h1>user card</h1>
       <h3>{name}</h3>
       <div className="userQuote">
-        <p>{quote[0]}</p>
-        <h6>{quote[1]}</h6>
+        <p>{quote}</p>
       </div>
       <img
         alt="Smiling girl catching a snowflake"
