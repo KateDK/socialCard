@@ -36,6 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: #f5b12e;
 }
 
 .userCard {
@@ -45,17 +46,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 15%;
 }
 
 .userImage {
-  width: 25%;
+  width: 30%;
   padding: 5px;
   margin-bottom: 1em;
 }
 
 .userQuote {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 75%;
+  margin: auto;
+
   height: 5em;
+  font-size: 1.5em;
 }
