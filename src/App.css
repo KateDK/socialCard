@@ -50,6 +50,12 @@
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.innerUserCard {
+  border: 2px solid #f5b12e;
+  border-radius: 15px;
+  width: 75%;
+  margin-bottom: 6%;
+}
 
 .userImage {
   width: 45%;
@@ -63,7 +69,5 @@
   margin-bottom: 6%;
   height: 5em;
   font-size: 1.5em;
-  border: 2px solid #f5b12e;
-  border-radius: 15px;
-  padding: 0.5%;
+  margin: auto;
 }
