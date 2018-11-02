@@ -42,7 +42,7 @@
 .userCard {
   width: 30%;
   margin: 1%;
-  background-color: #f5b12e;
+  background-color: #ed4f33;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +62,7 @@
   margin-bottom: 3%;
   height: 5em;
   font-size: 1.5em;
-  border: 2px solid #ed4f33;
+  border: 2px solid #f5b12e;
   border-radius: 15px;
+  padding: 0.5%;
 }
