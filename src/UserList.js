@@ -3,7 +3,7 @@ const users = [];
 let numUsers = 0;
 
 function makeList() {
-  while (numUsers < 50) {
+  while (numUsers < 1000) {
     const user = {
       name: faker.name.findName(),
       image: faker.image.avatar(),
