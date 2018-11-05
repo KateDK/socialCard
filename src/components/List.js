@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 
 function List(props) {
+  console.log(props);
   return (
     <div className="userList">
       {props.userList.map(item => (

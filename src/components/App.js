@@ -2,24 +2,21 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import List from './List';
-import faker from 'faker';
 
-//Create fake data:
-const users = [];
-let numUsers = 0;
-
-while (numUsers < 50) {
-  const user = {
-    name: faker.name.findName(),
-    image: faker.image.avatar(),
-    quote: faker.lorem.sentence(),
-  };
-  user.id = `${numUsers}${user.name}`;
-  users.push(user);
-  numUsers++;
-}
+import users from '../UserList';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [],
+    };
+  }
+
+  async componentDidMount() {
+    this.setState({ users: [...users] });
+  }
+
   render() {
     return (
       <div className="App">
@@ -27,7 +24,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div>
-          <List userList={users} />
+          <List userList={this.state.users} />
         </div>
       </div>
     );
