@@ -1,17 +1,15 @@
 import faker from 'faker';
 const users = [];
-let numUsers = 0;
 
 function makeList() {
-  while (numUsers < 1000) {
+  while (users.length <= 999) {
     const user = {
       name: faker.name.findName(),
       image: faker.image.avatar(),
       quote: faker.lorem.sentence(),
     };
-    user.id = `${numUsers}${user.name}`;
+    user.id = users.length;
     users.push(user);
-    numUsers++;
   }
 }
 makeList();
