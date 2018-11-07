@@ -44,7 +44,8 @@ Light #4EB4B0
 */
 .userList {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   justify-content: space-evenly;
   background-color: #3d445ee3;
 }
