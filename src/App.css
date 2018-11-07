@@ -46,13 +46,13 @@ Light #4EB4B0
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #3d445e;
+  background-color: #3d445ee3;
 }
 
 .userCard {
   width: 29%;
   margin: 1.5%;
-  background-color: #3b8e96;
+  background-color: #3b8e96a8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,9 +62,9 @@ Light #4EB4B0
 }
 .innerUserCard {
   border-radius: 15px;
-  width: 75%;
+  width: 90%;
   margin-bottom: 6%;
-  background-color: rgba(245, 177, 46, 0.2);
+  background-color: rgba(255, 255, 255, 0.637);
 }
 
 .userImage {
