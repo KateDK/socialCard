@@ -67,7 +67,9 @@ Light #4EB4B0
   /* height: 50%; */
   display: flex;
   flex-direction: row;
-  align-self: center;
+  /*flex-wrap: wrap; */
+  /* justify-content: space-between; */
+
   border-radius: 15px;
   width: 90%;
   height: auto;
@@ -76,18 +78,26 @@ Light #4EB4B0
 }
 
 .userImage {
-  width: 7%;
-  height: 7%;
+  width: 10vh;
+  /* height: 7vh; */
   /* margin-bottom: 1em; */
   border-radius: 100%;
   margin: 1em;
   border: 4px solid #3b8e96;
 }
 
+.cardText {
+  flex-direction: column;
+  align-self: flex-start;
+}
+
 .userQuote {
   /* width: 75%; */
-  align-self: flex-start;
+  /* align-self: flex-start; */
+  flex-grow: 2;
   /* margin-bottom: 6%; */
+  /* margin-left: 16%; */
+  /* margin-top: -7%; */
   height: 5em;
   font-size: 1.5em;
   /* margin: auto; */
