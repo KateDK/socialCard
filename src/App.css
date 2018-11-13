@@ -60,6 +60,7 @@
 
 .userQuote {
   text-align: start;
+  font-size: 1em;
   grid-column-start: 2;
 }
 
