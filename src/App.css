@@ -54,7 +54,7 @@ Light #4EB4B0
 
 .userCard {
   width: 50%;
-  height: 35vh;
+  /* height: 35vh; */
   margin: 1px;
   /* border: 4px solid #3b8e96; */
   /* border-radius: 15px; */
@@ -66,8 +66,8 @@ Light #4EB4B0
   /* align-items: center; */
   /* display: flex; */
   display: grid;
-  grid-template-columns: 7% 20% 100%;
-  grid-template-row: 7vh auto 70%;
+  grid-template-columns: 7% 20% auto;
+  /* grid-template-row: 7vh auto; */
   grid-gap: 1em;
 }
 .innerCard {
