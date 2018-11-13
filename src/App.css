@@ -32,16 +32,7 @@
 }
 
 /* my code: */
-/*
-colors scheme:
-Dark #3D445E
 
-Mid #3B8E96
-
-Light #4EB4B0
-
-
-*/
 .userList {
   display: flex;
   /* flex-wrap: wrap; */
