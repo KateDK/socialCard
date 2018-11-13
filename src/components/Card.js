@@ -6,10 +6,10 @@ function Card(props) {
   return (
     <div className="userCard">
       <img className="userImage" alt={`${name} avatar`} src={image} />
-
-      <h2>{name}</h2>
-
-      <p>{quote}</p>
+      <h2 className="userName">{name}</h2>
+      {/* <span className="innerCard"> */}
+      <p className="userQuote">{quote}</p>
+      {/* </span> */}
     </div>
   );
 }
