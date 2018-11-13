@@ -48,7 +48,7 @@
   background-color: white;
   display: grid;
   grid-template-columns: 7% auto;
-  grid-gap: 1em;
+  grid-column-gap: 1em;
 }
 
 .userImage {
