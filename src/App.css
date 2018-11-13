@@ -69,5 +69,6 @@
 
 .userName {
   text-align: left;
-  align-self: start;
+  place-self: start;
+  margin: 0%;
 }
