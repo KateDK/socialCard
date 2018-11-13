@@ -50,11 +50,6 @@
   grid-template-columns: 7% 20% auto;
   grid-gap: 1em;
 }
-.innerCard {
-  display: flex;
-  flex-direction: row;
-  order: -1;
-}
 
 .userImage {
   width: 70%;
