@@ -35,12 +35,9 @@
 
 .userList {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   align-items: center;
   background-color: lavender;
-  /* justify-content: space-evenly; */
-  /* background-color: #3d445ee3; */
 }
 
 .userCard {
