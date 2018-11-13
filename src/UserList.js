@@ -8,6 +8,9 @@ function makeList() {
       image: faker.image.avatar(),
       quote: faker.lorem.sentence(),
     };
+    if (users.length % 7 === 0) {
+      user.quote = faker.lorem.sentences();
+    }
     user.id = users.length;
     users.push(user);
   }
