@@ -56,7 +56,6 @@
 .userImage {
   width: 70%;
   border-radius: 100%;
-  /* margin: 1em; */
   border: 4px solid #3b8e96;
   place-self: center;
 }
@@ -71,6 +70,5 @@
 
 .userName {
   text-align: left;
-  /* place-self: start; */
   margin: 0%;
 }
