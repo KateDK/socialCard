@@ -6,7 +6,7 @@ function Card(props) {
   return (
     <div className="userCard">
       <img className="userImage" alt={`${name} avatar`} src={image} />
-      <h2 className="userName">{name}</h2>
+      <h3 className="userName">{name}</h3>
       {/* <span className="innerCard"> */}
       <p className="userQuote">{quote}</p>
       {/* </span> */}

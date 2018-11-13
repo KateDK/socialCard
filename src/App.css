@@ -64,7 +64,8 @@ Light #4EB4B0
   /* align-items: center; */
   /* display: flex; */
   display: grid;
-  grid-template-columns: 10vw 70%;
+  grid-template-columns: 7% 20% 100%;
+  grid-template-row: 7vh auto 70%;
   grid-gap: 1em;
 }
 .innerCard {
@@ -74,8 +75,8 @@ Light #4EB4B0
 }
 
 .userImage {
-  /* width: 10vh; */
-  align-self: flex-start;
+  width: 70%;
+  /* align-self: flex-start; */
   /* height: 7vh; */
   /* margin-bottom: 1em; */
   border-radius: 100%;
