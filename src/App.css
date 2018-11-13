@@ -54,7 +54,7 @@
 }
 
 .userImage {
-  width: 70%;
+  width: 100%;
   border-radius: 100%;
   border: 4px solid #3b8e96;
   place-self: center;
