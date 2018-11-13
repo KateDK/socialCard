@@ -47,7 +47,7 @@
   padding-bottom: 2%;
   background-color: white;
   display: grid;
-  grid-template-columns: 7% 20% auto;
+  grid-template-columns: 7% auto;
   grid-gap: 1em;
 }
 
@@ -60,6 +60,7 @@
 
 .userQuote {
   text-align: start;
+  grid-column-start: 2;
 }
 
 .userName {
