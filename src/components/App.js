@@ -23,7 +23,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <div>
+        <div className="container">
           <List userList={this.state.users} />
         </div>
       </div>
