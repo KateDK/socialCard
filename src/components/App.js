@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import List from './List';
+import RightSide from './RightSide';
 
 import users from '../UserList';
 
@@ -24,7 +25,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div className="container">
-          <div />
+          <RightSide />
           <List userList={this.state.users} />
           <div />
         </div>
