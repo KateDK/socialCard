@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import '../App.css';
 import List from './List';
 import RightSide from './RightSide';
+import LeftSide from './LeftSide';
 
 import users from '../UserList';
 
@@ -27,7 +28,7 @@ class App extends Component {
         <div className="container">
           <RightSide />
           <List userList={this.state.users} />
-          <div />
+          <LeftSide />
         </div>
       </div>
     );
