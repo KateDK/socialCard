@@ -24,7 +24,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div className="container">
+          <div />
           <List userList={this.state.users} />
+          <div />
         </div>
       </div>
     );
