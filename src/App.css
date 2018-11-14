@@ -34,7 +34,8 @@
 /* my code: */
 .container {
   display: grid;
-  grid-template-columns: 22% auto 22%;
+  grid-template-columns: 25% auto 25%;
+  grid-column-gap: 1em;
   background-color: lavender;
 }
 
@@ -46,7 +47,7 @@
 }
 
 .userCard {
-  width: 80%;
+  width: 100%;
   margin: 1px;
   padding-top: 1em;
   padding-bottom: 1em;
