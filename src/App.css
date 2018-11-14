@@ -34,24 +34,23 @@
 /* my code: */
 .container {
   display: grid;
-  grid-template-columns: 25% auto 25%;
+  grid-template-columns: 32% auto 32%;
   grid-column-gap: 1em;
   background-color: lavender;
 }
 
 .userList {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* background-color: lavender; */
+  /* width: 90%; */
+  place-self: center;
 }
 
 .userCard {
-  width: 100%;
+  /* width: 100%; */
   margin: 1px;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+  /* padding-left: 1em; */
+  padding: 1em;
   background-color: white;
   display: grid;
   grid-template-columns: 7% auto;
