@@ -17,7 +17,10 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    this.setState({ users: [...data.users] });
+    this.setState({
+      users: [...data.users],
+      user: { ...data.user },
+    });
   }
 
   render() {
@@ -28,7 +31,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div className="container">
-          <RightSide />
+          <RightSide user="test" />
           <List userList={this.state.users} />
           <LeftSide />
         </div>
