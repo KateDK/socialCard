@@ -24,16 +24,16 @@ class App extends Component {
   }
 
   render() {
-    console.log('data', data);
+    // console.log(this.state);
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div className="container">
-          <RightSide user="test" />
+          <LeftSide user={this.state.user} />
           <List userList={this.state.users} />
-          <LeftSide />
+          <RightSide />
         </div>
       </div>
     );

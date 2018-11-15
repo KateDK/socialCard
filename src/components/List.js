@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 
 function List(props) {
-  console.log(props);
+  // console.log(props);
   if (!props.userList.length) {
     return <h1>No Users Available</h1>;
   }
