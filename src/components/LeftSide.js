@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import UserCard from './UserCard';
 import UserTheme from './UserTheme';
 
 function LeftSide(props) {
@@ -12,12 +12,13 @@ function LeftSide(props) {
     <div>
       <h1>some content</h1>
       <UserTheme theme={props.user.theme} />
-      <img
+      {/* <img
         className="userImage"
         alt={`${props.user.name} avatar`}
         src={props.user.image}
       />
-      <h3 className="userName">{props.user.name}</h3>
+      <h3 className="userName">{props.user.name}</h3> */}
+      <UserCard user={props.user} />
     </div>
   );
 }
