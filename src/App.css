@@ -45,7 +45,12 @@
 }
 
 .dashboardProfileCard .userImage {
-  width: 7%;
+  width: 15%;
+  justify-self: start;
+}
+
+.dashboardProfileCard .userName {
+  justify-self: center;
 }
 
 .theme {
