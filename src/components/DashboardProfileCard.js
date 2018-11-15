@@ -6,8 +6,8 @@ function DashboardProfileCard(props) {
 
   return (
     <div className="dashboardProfileCard">
-      <img alt={`user theme`} src={theme} />
       <img className="userImage" alt={`${name} avatar`} src={image} />
+      <img classname="theme" alt={`user theme`} src={theme} />
       <h3 className="userName">{name}</h3>
     </div>
   );
