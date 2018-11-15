@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import UserTheme from './UserTheme';
 
 function LeftSide(props) {
   if (!props.user) {
@@ -10,7 +11,7 @@ function LeftSide(props) {
   return (
     <div>
       <h1>some content</h1>
-
+      <UserTheme />
       <img
         className="userImage"
         alt={`${props.user.name} avatar`}
