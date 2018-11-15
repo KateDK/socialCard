@@ -19,6 +19,11 @@ const data = {
       user.id = this.users.length;
       this.users.push(user);
     }
+    this.user = {
+      name: faker.name.findName(),
+      image: faker.image.avatar(),
+      theme: faker.image.abstract(),
+    };
   },
 };
 
