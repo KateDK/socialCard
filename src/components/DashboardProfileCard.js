@@ -1,7 +1,7 @@
 import React from 'react';
 // import UserTheme from './UserTheme';
 
-function UserCard(props) {
+function DashboardProfileCard(props) {
   const { name, image, theme } = props.user;
 
   return (
@@ -13,4 +13,4 @@ function UserCard(props) {
   );
 }
 
-export default UserCard;
+export default DashboardProfileCard;

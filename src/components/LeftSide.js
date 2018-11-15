@@ -1,5 +1,5 @@
 import React from 'react';
-import UserCard from './UserCard';
+import DashboardProfileCard from './DashboardProfileCard';
 
 function LeftSide(props) {
   if (!props.user) {
@@ -8,7 +8,7 @@ function LeftSide(props) {
   return (
     <div>
       <h1>some content</h1>
-      <UserCard user={props.user} />
+      <DashboardProfileCard user={props.user} />
     </div>
   );
 }
