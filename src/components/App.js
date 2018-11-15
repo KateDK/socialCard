@@ -6,7 +6,7 @@ import RightSide from './RightSide';
 import LeftSide from './LeftSide';
 
 // import users from '../UserList';
-import data from '../UserList';
+import data from '../data';
 
 class App extends Component {
   constructor(props) {
