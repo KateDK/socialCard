@@ -22,7 +22,8 @@ const data = {
     this.user = {
       name: faker.name.findName(),
       image: faker.image.avatar(),
-      theme: faker.image.abstract(),
+      theme:
+        'https://images.freeimages.com/images/large-previews/48e/abstract-1171774.jpg',
     };
   },
 };
