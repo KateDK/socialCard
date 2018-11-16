@@ -41,21 +41,29 @@
   display: grid;
   grid-template-rows: auto 7% auto;
   width: 70%;
-  border: #282c34 solid 4px;
+  /* border: #282c34 solid 4px; */
+  justify-self: center;
+  background-color: white;
 }
 
 .dashboardProfileCard .userImage {
   width: 15%;
   justify-self: start;
+  border: white solid 4px;
+  margin-left: 1em;
+  margin-bottom: 5%;
 }
 
 .dashboardProfileCard .userName {
   justify-self: center;
+  padding-bottom: 20%;
+  margin-left: -4em;
 }
 
 .theme {
-  width: 100%;
+  /* max-width: 100%; */
   max-height: 50%;
+  justify-self: stretch;
 }
 .container {
   display: grid;
