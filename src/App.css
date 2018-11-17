@@ -42,7 +42,6 @@
   display: grid;
   grid-template-rows: auto 7% auto;
   width: 70%;
-  /* border: #282c34 solid 4px; */
   justify-self: center;
   background-color: white;
 }
