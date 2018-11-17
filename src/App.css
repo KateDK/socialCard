@@ -70,7 +70,6 @@
   display: grid;
   grid-template-columns: 32% auto 32%;
   grid-column-gap: 1em;
-  /* background-color: lavender; */
   margin-top: 1em;
 }
 
