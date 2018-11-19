@@ -22,8 +22,12 @@ const data = {
     this.user = {
       name: faker.name.findName(),
       image: faker.image.avatar(),
+      handle: faker.internet.userName(),
       theme:
         'https://images.freeimages.com/images/large-previews/48e/abstract-1171774.jpg',
+      tweets: faker.random.number(),
+      folowers: faker.random.number(),
+      folowing: faker.random.number(),
     };
   },
 };
