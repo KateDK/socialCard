@@ -41,7 +41,7 @@
 
 .leftSide {
   display: grid;
-  grid-template-rows: 40vh auto;
+  grid-template-rows: 50vh auto;
 }
 
 .dashboardProfileCard {
@@ -80,16 +80,24 @@
   display: grid;
   grid-template-columns: 33% 33% 33%;
   color: gray;
+  justify-items: center;
 }
 
 .userNumbersItem {
   font-size: 1.5em;
   font-weight: bold;
 }
+.userNumbers p {
+  margin: 0%;
+  padding: 0%;
+}
 
 .userHandle {
   color: gray;
-  margin-top: 0%;
+  margin: 0%;
+}
+.dashboardUserName h3 {
+  margin-bottom: 0%;
 }
 
 .userCard {
@@ -121,4 +129,5 @@
 .userName {
   text-align: left;
   margin: 0%;
+  padding: 0%;
 }

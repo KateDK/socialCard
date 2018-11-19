@@ -10,7 +10,7 @@ function DashboardProfileCard(props) {
         <img className="theme" alt={`user theme`} src={theme} />
         <img className="userImage" alt={`${name} avatar`} src={image} />
       </div>
-      <span className="userName">
+      <span className="userName dashboardUserName">
         <h3>{name}</h3>
         <p className="userHandle">{`@${handle}`}</p>
       </span>
