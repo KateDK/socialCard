@@ -46,7 +46,7 @@
 
 .dashboardProfileCard {
   display: grid;
-  grid-template-rows: auto 7% auto;
+  grid-template-rows: 31% 7% 29% 33%;
   width: 70%;
   justify-self: end;
   background-color: white;
@@ -69,6 +69,11 @@
 .theme {
   max-height: 50%;
   justify-self: stretch;
+}
+
+.userNumbers {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .userCard {
