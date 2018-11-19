@@ -32,6 +32,13 @@
 }
 
 /* my code: */
+.container {
+  display: grid;
+  grid-template-columns: 32% auto 32%;
+  grid-column-gap: 1em;
+  margin-top: 1em;
+}
+
 .leftSide {
   display: grid;
   grid-template-rows: 30vh auto;
@@ -41,7 +48,7 @@
   display: grid;
   grid-template-rows: auto 7% auto;
   width: 70%;
-  justify-self: center;
+  justify-self: end;
   background-color: white;
 }
 
@@ -62,12 +69,6 @@
 .theme {
   max-height: 50%;
   justify-self: stretch;
-}
-.container {
-  display: grid;
-  grid-template-columns: 32% auto 32%;
-  grid-column-gap: 1em;
-  margin-top: 1em;
 }
 
 .userCard {
